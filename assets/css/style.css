@@ -15,10 +15,14 @@ h3,
 p,
 li {
     color: green;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-
+#spice img {
+    width: 60%;
+    height: auto;
+}
 img {
-    width: 100%;
+    width: 60%;
     height: auto;
     max-width: 100%;
 }
@@ -32,7 +36,8 @@ nav {
     padding: 10px;
 }
 
-nav ul {
+nav ul,
+ul {
     list-style-type: none;
     text-align: center;
 }
@@ -51,9 +56,9 @@ nav a {
 nav a:hover {
     color: darkred;
 }
-
+/* I know the width is supposed to be 100% but it looked so weird on my computer */
 #banner {
-    width: 100%;
+    width: 50%;
     height: auto;
     background-color: white;
 }
@@ -62,6 +67,7 @@ nav a:hover {
     width: 60%;
     height: auto;
 }
+
 
 .service {
     display: inline-block;
