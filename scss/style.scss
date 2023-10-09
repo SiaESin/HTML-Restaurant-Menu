@@ -1,11 +1,7 @@
-  // scss variables! 
-  $primary-color: #b47998;
-  $secondary-color: #FCFBF5;
-  $tertiary-color: #676F54;
-  $quaternary-color: #0f110c;
-  $fonts: Arial, Helvetica, Serif;
+@import "setting";
+@import "special";
+@import "table";
 
- 
   * {
   box-sizing: border-box;
   margin: 0;
@@ -62,8 +58,9 @@ nav {
         color: $secondary-color;
         margin-right: 25px;
         &:hover {
+            @include set-hover($primary-color);
             color: $primary-color;
-            font-size: 1.9em;
+            font-size: 22px;
         }
     }
 }

@@ -1,3 +1,10 @@
+.options {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -58,8 +65,11 @@ nav a {
   margin-right: 25px;
 }
 nav a:hover {
+  background-color: #b47998;
+  color: #FCFBF5;
+  font-size: 16px;
   color: #b47998;
-  font-size: 1.9em;
+  font-size: 22px;
 }
 
 #banner {

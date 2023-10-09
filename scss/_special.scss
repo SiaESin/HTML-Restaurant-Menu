@@ -1,0 +1,22 @@
+@function text-color-picker($color) {
+    @if(lightness($color) > 70) {
+      @return $quaternary-color;
+    } @else {
+      @return $secondary-color;
+    }
+  }
+  
+  // SCSS Mixin
+  @mixin set-hover($color, $size: 16px) {
+    background-color: $color;
+    color: text-color-picker($color);
+    font-size: $size;
+  }
+  
+  // Standard CSS
+  .options {
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+    overflow: auto;
+  }
