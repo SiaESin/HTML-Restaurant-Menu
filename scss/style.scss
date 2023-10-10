@@ -15,27 +15,35 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    @media (below(300px)) {
+        font-size: 14px;
+        @warn "Some content on this page may not be visible";
+      }
 }
 
-h1,
-h2 {
-    color: $quaternary-color;
-}
+main {
+    h1, h2 {
+        color: $quaternary-color;
+    }
 
-h3, 
-p,
-li {
-    color: $tertiary-color;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-}
-#spice img {
-    width: 60%;
-    height: auto;
+    p, li {
+        color: $tertiary-color;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
 }
 img {
     width: 60%;
     height: auto;
     max-width: 100%;
+    #banner {
+        width: 50%;
+        height: auto;
+        background-color: white;
+    } 
+    #spice {
+        width: 60%;
+        height: auto;
+    }
 }
 
 main {
@@ -58,41 +66,43 @@ nav {
         color: $secondary-color;
         margin-right: 25px;
         &:hover {
-            @include set-hover($primary-color);
+            @include set-hover($tertiary-color);
             color: $primary-color;
-            font-size: 22px;
+            font-size: 34px;
+        &:active {
+            color: $quaternary-color;
+        }
         }
     }
 }
 
-#banner {
-        width: 50%;
-        height: auto;
-        background-color: white;
-    img {
-        width: 60%;
-        height: auto;
-    }} 
 
 
 .service {
     display: inline-block;
-    background-color:  $secondary-color;
+    background-color:  $tertiary-color;
     border: 5px solid $quaternary-color;
     border-radius: 5px;
-    color: $primary-color;
+    color: $secondary-color;
     font-size: 2em;
     padding: 20px;
     margin: 10px;
 }
 
 table {
+    @include padding(5px, 10px, 5px, 10px,);
+    @include margin(5px, 10px, 5px, 10px);
     border: 3px solid $quaternary-color;
     width: 100%;
-    td,
     th {
         border: 1px solid $quaternary-color;
         padding: 5px;
+        background-color: invert($primary-color, 80%);
+        
+    }
+    td {
+        border: 1px solid $quaternary-color;
+        font-weight: bold;
     }
 }
   

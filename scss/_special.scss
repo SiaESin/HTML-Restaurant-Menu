@@ -1,15 +1,20 @@
-@function text-color-picker($color) {
-    @if(lightness($color) > 70) {
-      @return $quaternary-color;
-    } @else {
-      @return $secondary-color;
-    }
+@function invert($color, $amount: 100%) {
+    $inverse: change-color($color, $hue: hue($color) + 180);
+    @return mix($inverse, $color, $amount);
+  }
+
+@function below( $size-px ) {
+    @return "max-width: #{$size-px}";
+  }
+  
+@function above( $size-px ) {
+    @return "min-width: #{$size-px}";
   }
   
   // SCSS Mixin
   @mixin set-hover($color, $size: 16px) {
     background-color: $color;
-    color: text-color-picker($color);
+    color: $color;
     font-size: $size;
   }
   
