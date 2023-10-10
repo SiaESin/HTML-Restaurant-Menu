@@ -31,11 +31,16 @@ main {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-size: 20px;
         justify-content: center;
+        .origin {
+            padding-bottom: 2em;
+            margin-bottom: 2vh;
+        }
     } 
     li {
         list-style-type: none;
         color: $tertiary-color;
-        font-family:Verdana, Geneva, Tahoma, sans-serif
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 28px;
     }
 }
 img {

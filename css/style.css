@@ -34,10 +34,15 @@ main p {
   font-size: 20px;
   justify-content: center;
 }
+main p .origin {
+  padding-bottom: 2em;
+  margin-bottom: 2vh;
+}
 main li {
   list-style-type: none;
   color: #676F54;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 28px;
 }
 
 img {
