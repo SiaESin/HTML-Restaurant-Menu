@@ -28,13 +28,19 @@ body {
 main h1, main h2 {
   color: #0f110c;
 }
-main p, main li {
+main p {
+  color: #676F54;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+}
+main li {
+  list-style-type: none;
   color: #676F54;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 img {
-  width: 60%;
   height: auto;
   max-width: 100%;
 }
@@ -45,6 +51,10 @@ img #banner {
 }
 img #spice {
   width: 60%;
+  height: auto;
+}
+img #restauranttables {
+  width: 70%;
   height: auto;
 }
 

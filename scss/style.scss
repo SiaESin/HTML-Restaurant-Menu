@@ -26,13 +26,19 @@ main {
         color: $quaternary-color;
     }
 
-    p, li {
+    p {
+        color: $tertiary-color;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        justify-content: center;
+    } 
+    li {
+        list-style-type: none;
         color: $tertiary-color;
         font-family:Verdana, Geneva, Tahoma, sans-serif
     }
 }
 img {
-    width: 60%;
     height: auto;
     max-width: 100%;
     #banner {
@@ -42,6 +48,10 @@ img {
     } 
     #spice {
         width: 60%;
+        height: auto;
+    }
+    #restauranttables {
+        width: 70%;
         height: auto;
     }
 }
